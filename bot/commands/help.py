@@ -8,15 +8,16 @@ from utils import interactive  # noqa
 
 # Set the command groups to appear in the help
 help_groups = [
-    ("Bot Admin", "*Bot administration commands.*"),
-    ("Misc", "*Other assorted commands.*"),
+    ("Moderation", "*Common moderation commands.*"),
+    ("Tickets", "*View and manipulate tickets.*"),
+    ("Configuration", "*Admin commands to register and setup up the guild.*"),
+    ("Misc", "*Other assorted commands.*")
 ]
 
 # Set the main help string
-help_str = ("Skeleton bot template for the `dpy-cmdClient` framework.\n"
-            "Edit `bot/commands/help.py` to change this message.")
+help_str = ("Ticket based moderation bot.")
 
-help_title = "Bot Documentation"
+help_title = "TicketBot Documentation"
 
 
 @cmd("help",
